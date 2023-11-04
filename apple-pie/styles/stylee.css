@@ -1,0 +1,104 @@
+/* CSS RESET - do not remove */
+/* Reset default browser styles and provide a consistent starting point */
+html {
+  box-sizing: border-box;
+  font-size: 24px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+}
+
+.imgApplePie {
+    position: relative;
+    background-image: url("/apple-pie/images/apple-pie.jpg");
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: center center; 
+    height: 1000px;
+    max-width: 100%;
+}
+
+h1 {
+  position:absolute;
+  color: white;
+  font-size: 85px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*  Set the font */
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+ 
+}
+
+section {
+  max-width: 45%;
+  text-align: center;
+}
+
+#intro-paragraph {
+  padding-top: 80px;
+  text-align: justify;
+}
+
+h2 {
+  text-align: start;
+  padding-top: 50px;
+}
+
+p {
+}
+
+.recipe-img {
+  max-width: 500px;
+  max-height: 300px;
+}
+
+ul {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  list-style-type: none;
+}
+li {
+  text-align: left;
+  margin-left: 15px;
+}
+
+ul li::before {
+  content: "-";
+  list-style-type: none;
+}
+
+.cooking-img {
+  max-width: 500px;
+  max-height: 300px;
+}
+
+ol {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  list-style-type: none;
+}
+
+ol li {
+  counter-increment: custom-counter;
+}
+
+ol li::before {
+  content: counter(custom-counter) ")";
+}
